@@ -44,31 +44,91 @@
 
 			<section>
 				<h2>Administrative data analysis workflow</h2>
-				<img src="img/workflow.png" alt="Administrative data analysis workflow" class="plain" style="width :80%"> 
+				<img src="img/workflow.png" alt="Administrative data analysis workflow" class="plain" style="width :80%">
 			</section>
-
+			
 			<section>
 				<h2>GSBPM mapping</h2>
-				<img src="img/GSBPM2.png" alt="Administrative data analysis workflow" class="plain" style="width :70%"> 
+				<img src="img/GSBPM2.png" alt="Administrative data analysis workflow" class="plain" style="width :70%">
 			</section>
-
+			
 			<section>
 				<h2>Main Features</h2>
 				<ul>
-					<li class="fragment" data-fragment-index="1">User defined rules (currently base on SQL)</li>
-					<li class="fragment" data-fragment-index="2">Multi modules process</li>
-						<ol>
-							<li class="fragment" data-fragment-index="3">Register</li>
-							<li class="fragment" data-fragment-index="3">Identify</li>
-							<li class="fragment" data-fragment-index="3">Load</li>
-							<li class="fragment" data-fragment-index="3">Structure(otpional)</li>
-							<li class="fragment" data-fragment-index="3">Control(otpional)</li>
-							<li class="fragment" data-fragment-index="3">Filter(otpional)</li>
-							<li class="fragment" data-fragment-index="3">Format(otpional)</li>
-						</ol>
-					<li class="fragment" data-fragment-index="4">Optimized (multi threading, parallelization)</li>
+					<li class="fragment"> User-defined rules <span class="fragment">(currently based on SQL)</span></li>
+					<li class="fragment">Optimized <span class="fragment">(multi-threading, database parallelization)</span></li>
+					<li class="fragment">Built in sandbox <span class="fragment">(Design process and tests)</span></li>
+					<li class="fragment">
+						Multi-module process
+						<table class="fragment">
+							<!-- 
+								<thead><tr>
+								<th class="tg-0lax">Name</th>
+								<th class="tg-0lax">GSPBM</th>
+								<th class="tg-0lax"></th>
+							</tr>
+						</thead> -->
+							<tbody>
+								<tr>
+									<th >Register</th>
+									<td >Finalise collection</td>
+									<td ></td>
+								</tr>
+								<tr>
+									<th>Identify</th>
+									<td >Classify and code</td>
+									<td ></td>
+								</tr>
+								<tr>
+									<th >Load</th>
+									<td >Integrate data</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th >Structure</th>
+									<td >Integrate data</td>
+									<td >optional</td>
+								</tr>
+								<tr>
+									<th >Control</th>
+									<td >Review and validate</td>
+									<td >optional</td>
+								</tr>
+								<tr>
+									<th >Filter</th>
+									<td >Edit and impute</td>
+									<td >optional</td>
+								</tr>
+								<tr>
+									<th >Format</th>
+									<td >Derive new variables and units</td>
+									<td >optional</td>
+								</tr>
+							</tbody>
+						</table>
+					</li>
 				</ul>
 			</section>
+			<section>
+				<section>
+					<h2>Architecture</h2>
+					<p>Common 3-tiers application</p> 
+					<ul>
+						<li class="fragment">J2E application</li>
+							<ul>
+								<li class="fragment">Java 8</li>
+								<li class="fragment">Struts 2</li>
+							</ul>
+						<li class="fragment">PostgreSQL database</li>
+					</ul>
+				
+				</section>
+
+				<section>
+					<h3>Containerisation (docker) on going</h3>
+				</section>
+			</section>
+
 		</div>
 	</div>
 
@@ -86,7 +146,7 @@
 			minScale: 1,
 			maxScale: 1,
 
-	    dependencies: [{
+			dependencies: [{
 				src: 'plugin/markdown/marked.js'
 			}, {
 				src: 'plugin/markdown/markdown.js'
