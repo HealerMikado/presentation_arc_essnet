@@ -46,12 +46,14 @@
 				<h2>Administrative data analysis workflow</h2>
 				<img src="img/workflow.png" alt="Administrative data analysis workflow" class="plain" style="width :80%">
 			</section>
-			
+
+
 			<section>
-				<h2>GSBPM mapping</h2>
-				<img src="img/GSBPM2.png" alt="Administrative data analysis workflow" class="plain" style="width :70%">
+				<h2>Arc workflow at Insee</h2>
+				<img src="img/Insee workflow.png" alt="Insee workflow" class="plain" style="width :90%">
 			</section>
-			
+
+
 			<section>
 				<h2>Main Features</h2>
 				<ul>
@@ -61,48 +63,41 @@
 					<li class="fragment">
 						Multi-module process
 						<table class="fragment">
-							<!-- 
-								<thead><tr>
-								<th class="tg-0lax">Name</th>
-								<th class="tg-0lax">GSPBM</th>
-								<th class="tg-0lax"></th>
-							</tr>
-						</thead> -->
 							<tbody>
 								<tr>
-									<th >Register</th>
-									<td >Finalise collection</td>
-									<td ></td>
-								</tr>
-								<tr>
-									<th>Identify</th>
-									<td >Classify and code</td>
-									<td ></td>
-								</tr>
-								<tr>
-									<th >Load</th>
-									<td >Integrate data</td>
+									<th>Register</th>
+									<td>Finalise collection</td>
 									<td></td>
 								</tr>
 								<tr>
-									<th >Structure</th>
-									<td >Integrate data</td>
-									<td >optional</td>
+									<th>Identify</th>
+									<td>Classify and code</td>
+									<td></td>
 								</tr>
 								<tr>
-									<th >Control</th>
-									<td >Review and validate</td>
-									<td >optional</td>
+									<th>Load</th>
+									<td>Integrate data</td>
+									<td></td>
 								</tr>
 								<tr>
-									<th >Filter</th>
-									<td >Edit and impute</td>
-									<td >optional</td>
+									<th>Structure</th>
+									<td>Integrate data</td>
+									<td>optional</td>
 								</tr>
 								<tr>
-									<th >Format</th>
-									<td >Derive new variables and units</td>
-									<td >optional</td>
+									<th>Control</th>
+									<td>Review and validate</td>
+									<td>optional</td>
+								</tr>
+								<tr>
+									<th>Filter</th>
+									<td>Edit and impute</td>
+									<td>optional</td>
+								</tr>
+								<tr>
+									<th>Format</th>
+									<td>Derive new variables and units</td>
+									<td>optional</td>
 								</tr>
 							</tbody>
 						</table>
@@ -110,23 +105,46 @@
 				</ul>
 			</section>
 			<section>
+				<h2>GSBPM mapping</h2>
+				<img src="img/GSBPM2.png" alt="GSBPM mapping" class="plain" style="width :70%">
+			</section>
+			<section>
 				<section>
 					<h2>Architecture</h2>
-					<p>Common 3-tiers application</p> 
+					<p>Common 3-tier application</p>
 					<ul>
 						<li class="fragment">J2E application</li>
-							<ul>
-								<li class="fragment">Java 8</li>
-								<li class="fragment">Struts 2</li>
-							</ul>
+						<ul>
+							<li class="fragment">Java 8</li>
+							<li class="fragment">Struts 2</li>
+						</ul>
 						<li class="fragment">PostgreSQL database</li>
 					</ul>
-				
+
 				</section>
 
 				<section>
-					<h3>Containerisation (docker) on going</h3>
+					<h3>Containerisation (docker) ongoing</h3>
 				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>Thank you for your attention</h1>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Zoom on service</h2>
+					<img src="img/service_explication.png" alt="Zomm on service workflow" class="plain" style="width :50%">
+				</section>
+
+				<section>
+						<h2>Class diagramm</h2>
+						<img src="img/class_diagram.png" alt="Class diagram of services classes" class="plain" style="width :120%">
+					</section>
+
 			</section>
 
 		</div>
@@ -145,6 +163,10 @@
 			margin: 0,
 			minScale: 1,
 			maxScale: 1,
+			mouseWheel: true,
+			slideNumber: true,
+			slideNumber: 'c/t' ,
+			history: true,
 
 			dependencies: [{
 				src: 'plugin/markdown/marked.js'
